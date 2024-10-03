@@ -1,0 +1,10 @@
+@use '../variables';
+
+.index-news__text {
+    color: variables.$color-light;
+    text-transform: uppercase;
+    font-size: 3rem;
+    background-image: url(../../../images/layout/linje.jpg);
+    background-position: center;
+    background-size: cover;
+}

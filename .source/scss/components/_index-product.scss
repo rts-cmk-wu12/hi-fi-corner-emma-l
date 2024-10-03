@@ -1,0 +1,19 @@
+@use '../variables';
+
+.index-product {
+    background-image: url(../../../images/layout/Prima-Luna-Amp.png);
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    
+    &__heading {
+        color: variables.$color-accent;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 2.5rem;
+    }
+
+    &__arrows-container {
+        color: variables.$color-arrows;
+    }
+}

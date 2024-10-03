@@ -1,0 +1,34 @@
+@use '../variables';
+
+.index-header {
+    background-image: url(../../../images/layout/COLOURBOX63525581.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: variables.$color-light;
+    
+    &__links-container {
+        background-color: variables.$color-dark-transparent;
+        
+        .icon__button-style {
+            background-color: variables.$color-subscribe-email;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+    }
+    
+    .navigation-list {
+        text-transform: uppercase;
+        background-color: variables.$color-dark;
+        border: 1px solid variables.$color-border;
+        
+        &--selected {
+            color: variables.$color-accent;
+        }
+    }
+    
+    .logo__heading {
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+}

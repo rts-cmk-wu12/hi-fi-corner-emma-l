@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "Museo Sans Rounded", sans-serif;
+  src: url("./fonts/MuseoSansRounded100.woff") format("woff");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Museo Sans Rounded", sans-serif;
+  src: url("./fonts/MuseoSansRounded300.woff") format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Museo Sans Rounded", sans-serif;
+  src: url("./fonts/MuseoSansRounded500.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Museo Sans Rounded", sans-serif;
+  src: url("./fonts/MuseoSansRounded700.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Museo Sans Rounded", sans-serif;
+  src: url("./fonts/MuseoSansRounded900.woff") format("woff");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Museo Sans Rounded", sans-serif;
+  src: url("./fonts/MuseoSansRounded1000.woff") format("woff");
+  font-weight: 1000;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Museo Sans Rounded", sans-serif;
+}
+
+/* --- desktop --- */
+@media (min-width: 30rem) {
+  .wrapper {
+    margin: 0 auto;
+    max-width: 78rem;
+  }
+  .index-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .index-header__links-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: right;
+    padding: 1rem 2rem;
+  }
+  .index-header__links-container .icon__button-style {
+    padding: 0.15rem 0.25rem;
+    display: flex;
+    gap: 0.25rem;
+    border-radius: 0.25rem;
+    align-items: center;
+  }
+  .index-header__links-container .index-header__icon-container {
+    display: flex;
+    gap: 2rem;
+  }
+  .index-header .navigation-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.5rem 0;
+  }
+  .index-header__logo-container {
+    padding: 8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .index-header__logo-container .logo__image {
+    width: 12rem;
+  }
+  .index-news__text {
+    text-align: center;
+    padding: 8rem 0;
+  }
+  .index-product {
+    height: 30rem;
+    margin: 2rem;
+  }
+  .index-product__heading {
+    padding: 5rem;
+  }
+  .index-product__arrows-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.index-header {
+  background-image: url(../../../images/layout/COLOURBOX63525581.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.index-header__links-container {
+  background-color: rgba(0, 0, 0, 0.7019607843);
+}
+.index-header__links-container .icon__button-style {
+  background-color: #1697f1;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.index-header .navigation-list {
+  text-transform: uppercase;
+  background-color: #000;
+  border: 1px solid #282418;
+}
+.index-header .navigation-list--selected {
+  color: #a39161;
+}
+.index-header .logo__heading {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.index-news__text {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 3rem;
+  background-image: url(../../../images/layout/linje.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.index-product {
+  background-image: url(../../../images/layout/Prima-Luna-Amp.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.index-product__heading {
+  color: #a39161;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+.index-product__arrows-container {
+  color: #c0ab9f;
+}/*# sourceMappingURL=main.css.map */
