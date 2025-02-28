@@ -1,0 +1,21 @@
+@use '../../../style/variables';
+
+.shop-categories-main {
+    background-color: variables.$color-light;
+    color: variables.$color-dark;
+
+    &__category-navigation {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 2rem;
+    }
+
+    &__shop-link {
+        color: variables.$color-accent;
+    }
+
+    &__current-category-link {
+        text-transform: capitalize;
+    }
+}
