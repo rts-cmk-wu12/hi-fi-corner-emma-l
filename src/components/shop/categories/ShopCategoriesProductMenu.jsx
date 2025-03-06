@@ -11,7 +11,7 @@ export default function ShopCategoriesProductMenu({ amplifiersData, categoriesDa
     console.log(categoriesData)
 
     return (
-        <ul>
+        <ul  className="shop-categories-product-menu">
 {/*             {data && allCategories?.map(category => {
                 return (
                     <li key={category[1]?.map(subCategory => {
@@ -22,6 +22,35 @@ export default function ShopCategoriesProductMenu({ amplifiersData, categoriesDa
                     </li>
                 )
             })} */}
+            <li>
+                    <button>Amplifiers</button>
+                <ul className="shop-categories-product-menu__list">
+                    <li>
+                        <button>Integrated Amplifiers</button>
+                    </li>
+                    <li>
+                        <button>Power Amplifiers</button>
+                    </li>
+                    <li>
+                        <button>Preamplifiers</button>
+                    </li>
+                    <li>
+                        <button>Tube Amplifiers</button>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <button>Speakers</button>
+            </li>
+            <li>
+                <button>Turntables</button>
+            </li>
+            <li>
+                <button>CD Players</button>
+            </li>
+            <li>
+                <button>DVD Players</button>
+            </li>
         </ul>
     )
 }

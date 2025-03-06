@@ -3,6 +3,9 @@ import './ShopCategoriesMain.scss';
 import ShopCategoriesProductMenu from './ShopCategoriesProductMenu';
 import { useEffect } from 'react';
 import { Link, useParams } from 'react-router';
+import ShopCategoriesFilter from './ShopCategoriesFilter';
+import ShopCategoriesManufacturerMenu from './ShopCategoriesManufacturerMenu';
+import ShopCategoriesProductOverview from './ShopCategoriesProductOverview';
 
 export default function ShopCategoriesMain() {
 
@@ -55,6 +58,9 @@ export default function ShopCategoriesMain() {
                 <Link to={`/shop/${currentCategory}`} className='shop-categories-main__current-category-link'>{currentCategory}</Link>
             </div>
             <ShopCategoriesProductMenu amplifersData={amplifiersData} categoriesData={categoriesData} />
+            <ShopCategoriesFilter/>
+            <ShopCategoriesProductOverview />
+            <ShopCategoriesManufacturerMenu />
         </main>
     )
 }
